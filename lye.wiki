@@ -1,8 +1,29 @@
 <[autotemplate]
-title={Lye}
+author={Corbin Simpson}
+title={Lye: How a Musician Built a Music Box}
 [autotemplate]>
 
-=== Implementation Choices ===
+== About ==
+
+==== Me ====
+
+* Musician
+* Programmer
+*<2-> !'''Lazy'''!
+
+==== Audio ====
+
+'''Audio''': Waveforms representing sound
+
+Audio is not important today.
+
+==== Music ====
+
+'''Music''': Universal language representing audio generation
+
+Lye generates large amounts of music from small amounts of music.
+
+== Implementation Choices ==
 
 ==== Language ====
 
