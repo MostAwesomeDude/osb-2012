@@ -1,0 +1,19 @@
+<[autotemplate]
+title={Lye}
+[autotemplate]>
+
+=== Implementation Choices ===
+
+==== Language ====
+
+* Haskell
+** Pro: Clean, elegant code
+** Pro: Terse, obviously correct algorithms
+** Con: Statefulness is hard
+** Con: Awkward libraries
+* Python
+** Pro: Strong personal background
+** Pro: Traditional patterns
+** Con: Not Haskell
+
+Winner: Python!

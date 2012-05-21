@@ -1,0 +1,43 @@
+<[autotemplate]
+title={Practial Lessons from Exotic Languages}
+[autotemplate]>
+
+=== Forth ===
+
+==== The Power of Forth ====
+
+* Concatenation
+
+==== Concatenative Factoring ====
+
+<[code][style=basic,language=Forth]
+2 dup * dup * .
+<[code]>
+
+<[code][style=basic,language=Forth]
+: sq dup * ;
+2 sq sq .
+<[code]>
+
+==== Practical Factoring ====
+
+<[code][style=basic,language=Python]
+e = ('\x00' * (4 - len(e))) + e
+n = ('\x00' * (4 - len(n))) + n
+[code]>
+
+<[code][style=basic,language=Python]
+def f(x):
+    return ('\x00' * (4 - len(x)) + x
+
+e = f(e)
+n = f(n)
+[code]>
+
+<[code][style=basic,language=Python]
+def f(x):
+    return x.rjust(4, '\x00')
+
+e = f(e)
+n = f(n)
+[code]>
