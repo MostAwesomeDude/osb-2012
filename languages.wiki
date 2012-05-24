@@ -2,22 +2,31 @@
 title={Practial Lessons from Exotic Languages}
 [autotemplate]>
 
-=== Forth ===
+== Overview ==
 
-==== The Power of Forth ====
+==== Languages ====
 
-* Concatenation
+* Forth
+* Haskell
+* Prolog
+
+==== Concepts ====
+
+* Factoring
+* Higher-level operations
+
+== Factoring ==
 
 ==== Concatenative Factoring ====
 
-<[code][style=basic,language=Forth]
+<[code][style=basic]
 2 dup * dup * .
-<[code]>
+[code]>
 
-<[code][style=basic,language=Forth]
+<[code][style=basic]
 : sq dup * ;
 2 sq sq .
-<[code]>
+[code]>
 
 ==== Practical Factoring ====
 
@@ -40,4 +49,25 @@ def f(x):
 
 e = f(e)
 n = f(n)
+[code]>
+
+== Higher-level Operations ==
+
+==== In Haskell ====
+
+* @filter@
+* @foldr@
+* @map@
+
+==== In C++ ====
+
+* Folds
+** @std::accumulate@
+* Maps
+** @std::for\_each@
+** @std::transform@
+
+==== C Example ====
+
+<[code][style=basic,language=C]
 [code]>
