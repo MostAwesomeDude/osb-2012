@@ -23,6 +23,20 @@ Audio is not important today.
 
 Lye generates large amounts of music from small amounts of music.
 
+=== Goals ===
+
+==== Playback ====
+
+* Music box
+* Aebersold
+
+==== Expression ====
+
+* Music by musicians, for musicians
+* Lye '''cannot''' understand musical expression
+* Lye '''can''' understand hints
+* Lye also knows how to play different instruments
+
 == Implementation Choices ==
 
 ==== Language ====
@@ -38,3 +52,7 @@ Lye generates large amounts of music from small amounts of music.
 ** Con: Not Haskell
 
 Winner: Python!
+
+==== Data Flow ====
+
+<<<lye-structure.pdf,scale=0.4>>>
