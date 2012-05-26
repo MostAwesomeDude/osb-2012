@@ -56,3 +56,94 @@ Winner: Python!
 ==== Data Flow ====
 
 <<<lye-structure.pdf,scale=0.4>>>
+
+=== Formats ===
+
+==== Possible Formats ====
+
+* MusicXML
+* ABC
+* Lilypond
+
+==== MusicXML: Middle C ====
+
+<[code][style=basic,language=XML,basicstyle=\tiny]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.0 Partwise//EN"
+    "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.0">
+  <part-list>
+    <score-part id="P1">
+      <part-name>Music</part-name>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <measure number="1">
+      <attributes>
+        <divisions>1</divisions>
+        <key><fifths>0</fifths></key>
+        <time>
+          <beats>4</beats>
+          <beat-type>4</beat-type>
+        </time>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>4</duration>
+        <type>whole</type>
+      </note>
+    </measure>
+  </part>
+</score-partwise>
+[code]>
+
+==== ABC: Cool Parts ====
+
+<[code][style=basic,title=Middle C]
+C
+[code]>
+
+<[code][style=basic,title=Tuplets]
+(3ABA (3ABA (3ABA A
+[code]>
+
+==== ABC: Quirks ====
+
+<[code][style=basic,title=Capitalized Octaves]
+A B c d e
+[code]>
+
+<[code][style=basic,title=Odd Numbers for Dots]
+b3
+[code]>
+
+<[code][style=basic,title=Tuplets and Slurs Share Syntax]
+(3ABA (ABAB) A
+[code]>
+
+* Unstandardized!
+
+==== Lilypond ====
+
+<[code][style=basic,title=Middle C]
+c'1
+[code]>
+
+<[code][style=basic,title=Relative]
+\relative c' { c2 d4 e b'2 a r4 c, d e g f c d c1 }
+[code]>
+
+==== Parsers ====
+
+* PEGs
+* PyMeta
+** EBNF
+** Packrat
+** Not a DSL
