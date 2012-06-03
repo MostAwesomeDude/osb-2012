@@ -25,10 +25,21 @@ Lye generates large amounts of music from small amounts of music.
 
 === Goals ===
 
+==== Video Game Composer Cycle ====
+
+*<1-3> _blue_Get idea_
+* _violet_Compose music_
+*<-2> _blue_Arrange music_
+* _violet_Transcribe music_
+*<1> _red_Sequence music_
+*<1> _violet_Compile music_
+* Repeat
+
 ==== Playback ====
 
 * Music box
 * Aebersold
+* BGM
 
 ==== Expression ====
 
