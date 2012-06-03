@@ -2,9 +2,20 @@
 title={Practial Lessons from Exotic Languages}
 [autotemplate]>
 
+\def\cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny \bf ++}}}
+\def\cs{{C\nolinebreak\hspace{-.05em}\raisebox{.3ex}{\small \bf $\sharp$}}}
+
+
 == Overview ==
 
-==== Languages ====
+==== Your Languages ====
+
+* Java
+* C
+* \cpp
+* \cs
+
+==== My Languages ====
 
 * Forth
 * Haskell
@@ -14,6 +25,7 @@ title={Practial Lessons from Exotic Languages}
 
 * Factoring
 * Higher-level operations
+* Declarative design
 
 == Factoring ==
 
@@ -53,21 +65,64 @@ n = f(n)
 
 == Higher-level Operations ==
 
-==== In Haskell ====
+=== Theory ===
 
-* @filter@
-* @foldr@
-* @map@
+==== Linguistic Support ====
 
-==== In C++ ====
+* Higher-order functions (C, \cpp, \cs)
+* Sufficiently polymorphic types (Java, \cpp, \cs)
 
-* Folds
-** @std::accumulate@
-* Maps
-** @std::for\_each@
-** @std::transform@
+==== Common Operations ====
+
+* Fold (catamorphic operator)
+* Map
+* Filter
+* Zip (convolved map)
+* Zip-with
+
+=== Practice ===
+
+==== In Functional Languages ====
+
+* Haskell
+** @foldr@
+** @map@
+** @filter@
+** @zip@
+** @zipWith@
+* Python
+** @reduce@
+** @map@
+** @filter@
+** @zip@
+
+==== In Imperative Languages ====
+
+* \cpp
+** Fold: @std::accumulate@
+** Iteration: @std::for\_each@
+** Map/zip-with: @std::transform@
+** Filter: @std::remove@, @std::remove\_if@, @std::remove\_copy@, @std::remove\_copy\_if@
+* \cs
+** Fold: @IEnumerable<T>.Aggregate@
+** Map: @IEnumerable<T>.Select@
+** Filter: @IEnumerable<T>.Where@
+** Zip-with: @IEnumerable<T>.Zip@
 
 ==== C Example ====
 
 <[code][style=basic,language=C]
 [code]>
+
+== Declarative Design ==
+
+==== Embedded DSLs ====
+
+* Prolog
+** SWI-Prolog
+* SQLite
+** Chrome/Chromium
+** Firefox/Thunderbird
+** Bundled in PHP and Python
+** Available in C/\cpp, Java, \cs
+** Native port in \cs
