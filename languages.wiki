@@ -126,3 +126,17 @@ n = f(n)
 ** Bundled in PHP and Python
 ** Available in C/\cpp, Java, \cs
 ** Native port in \cs
+
+== Wrapping Up ==
+
+==== Summary ====
+
+* Exotic languages are awesome
+* Imperative languages are practical
+* Meet in the middle
+
+==== Questions? ====
+
+Special thanks to:
+
+* People on #0x10c-dev, #osu-lug, and #python on Freenode
