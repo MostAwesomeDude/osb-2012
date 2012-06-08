@@ -63,7 +63,7 @@ Lye generates large amounts of music from small amounts of music.
 ** Pro: Clean, elegant code
 ** Pro: Terse, obviously correct algorithms
 ** Con: Stateful computations are hard
-** Con: Awkward libraries
+** Con: Awkward/underdocumented libraries (Trifecta, Haskore, SYB/Uniplate)
 * Python
 ** Pro: Strong personal background
 ** Pro: Traditional patterns
@@ -225,6 +225,19 @@ class NoteTransformer(Visitor):
         return (SciNote(number, note.duration, None),
             True)
 [code]>
+
+==== Marks ====
+
+* Isolate repeated motifs into sections called '''marks'''
+* Work on a per-mark basis
+* @MarkedLyne@ separates mark management from lynes
+
+==== Exporters ====
+
+* Export a single section to a target
+** FluidSynth
+** MIDI file
+* Separation of concerns
 
 == Wrapping Up ==
 
