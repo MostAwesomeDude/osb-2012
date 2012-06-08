@@ -226,6 +226,13 @@ class NoteTransformer(Visitor):
             True)
 [code]>
 
+==== Wait, what, meta-MIDI? ====
+
+* Information about MIDI data
+* Could become actual MIDI data
+* Lye $\rightarrow$ MIDI $\rightarrow$ FluidSynth MIDI API
+*<2> Lye $\rightarrow$ FluidSynth Sequencer/Synth API
+
 ==== Marks ====
 
 * Isolate repeated motifs into sections called '''marks'''
