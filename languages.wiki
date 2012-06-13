@@ -41,6 +41,19 @@ title={Practial Lessons from Exotic Languages}
 
 == Factoring ==
 
+==== What is factoring? ====
+
+* '''To factor''': "to express a quantity as two or more separate quantities of like kind"
+* To pull apart into '''smaller''', '''equivalent''' pieces
+
+==== Concatenative Languages ====
+
+* '''Concatenative''': At (nearly) any point, factoring is possible
+* Stack-based
+* Forth: Simplicity
+* Joy: Purity
+* Factor: Practicality
+
 ==== Concatenative Factoring ====
 
 <[code][style=basic]
@@ -61,7 +74,7 @@ n = ('\x00' * (4 - len(n))) + n
 
 <[code][style=basic,language=Python]
 def f(x):
-    return ('\x00' * (4 - len(x)) + x
+    return ('\x00' * (4 - len(x))) + x
 
 e = f(e)
 n = f(n)
@@ -75,9 +88,18 @@ e = f(e)
 n = f(n)
 [code]>
 
+==== When to Factor? ====
+
+* Short answer: Always factor!
+* Profile before inlining
+
 == Higher-level Operations ==
 
 === Theory ===
+
+==== Leveling Up ====
+
+* '''Higher-order function''': A function that takes other functions as parameters
 
 ==== Linguistic Support ====
 
@@ -97,7 +119,7 @@ n = f(n)
 ==== In Functional Languages ====
 
 * Haskell
-** @foldr@
+** @foldr@, @foldl@
 ** @map@
 ** @filter@
 ** @zip@
@@ -107,6 +129,10 @@ n = f(n)
 ** @map@
 ** @filter@
 ** @zip@
+* Scheme
+** @fold-right@, @fold-left@
+** @map@
+** @filter@
 
 ==== In Imperative Languages ====
 
@@ -121,14 +147,29 @@ n = f(n)
 ** Filter: @IEnumerable<T>.Where@
 ** Zip-with: @IEnumerable<T>.Zip@
 
-==== C Example ====
+==== Don't Forget C! ====
 
 <[code][style=basic,language=C]
+void *bsearch(
+    const void *key, const void *base, size_t count,
+    size_t size,
+    int (*compare)(const void *, const void *));
+void qsort(
+    void *base, size_t count, size_t size,
+    int (*compare)(const void *, const void *));
 [code]>
+
+* Function pointers
+* No type safety
 
 == Declarative Design ==
 
-=== Facts ===
+==== Facts ====
+
+* Constants
+* Computed rarely
+* Important but arbitrary
+* Searchable through custom functions
 
 ==== Ad-hoc Constants ====
 
