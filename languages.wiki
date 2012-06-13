@@ -8,6 +8,11 @@ title={Practial Lessons from Exotic Languages}
 
 == Overview ==
 
+==== Me ====
+
+* Programmer
+* Dozens of languages
+
 ==== Your Languages ====
 
 * Java
@@ -20,6 +25,13 @@ title={Practial Lessons from Exotic Languages}
 * Forth
 * Haskell
 * Prolog
+
+==== Other Languages ====
+
+* ECMAScripts (ActionScript, JavaScript)
+* Lisps (CL, Scheme)
+* PHP
+* Python
 
 ==== Concepts ====
 
@@ -116,16 +128,86 @@ n = f(n)
 
 == Declarative Design ==
 
+=== Facts ===
+
+==== Ad-hoc Constants ====
+
+<[code][style=basic,language=Python]
+AIR, STONE, GRASS, DIRT = range(4)
+[code]>
+
+* Freakin' constants, how do they work?
+
+==== Classes of Facts ====
+
+<[code][style=basic,language=Python]
+class Block(object):
+
+    def __init__(self, slot, name):
+        self.slot = slot
+        self.name = name
+
+names = \["air", "stone", "grass", "dirt", ...\]
+
+blocks = \[Block(slot, name)
+           for slot, name in zip(xrange(256), names)\]
+
+named_blocks = dict((block.name, block)
+                    for block in blocks)
+[code]>
+
+* Note that ellipsis
+* Maintainable? Maybe...
+* 197 LoC for 90 objects
+
+==== Databases, Done Dirt Cheap ====
+
+<[code][style=basic,language=Python]
+class Block(object):
+
+    def __init__(self, slot, name, secondary=0):
+        ...
+
+class Item(object):
+
+    def __init__(self, slot, name, secondary=0):
+        ...
+[code]>
+
+* What's the difference, really?
+
+==== Straight-up Reinvention of Wheels ====
+
+<[code][style=basic,language=Python]
+class Block(object):
+
+    def __init__(self, slot, name, secondary=0,
+                 drop=None, replace=0, ratio=1,
+                 quantity=1, dim=16, breakable=True,
+                 orientation=None):
+        ...
+
+# Torches are orientable and don't dim.
+_add_block(Block(50, "torch",
+           orientation=(None, 5, 4, 3, 2, 1), dim=0))
+[code]>
+
+* 793 LoC for 237 objects
+* Ad-hoc queries
+* Potato programming
+
 ==== Embedded DSLs ====
 
 * Prolog
 ** SWI-Prolog
-* SQLite
-** Chrome/Chromium
-** Firefox/Thunderbird
-** Bundled in PHP and Python
-** Available in C/\cpp, Java, \cs
-** Native port in \cs
+* Datalog
+* SQL
+** SQLite
+*** Chrome/Chromium
+*** Firefox/Thunderbird
+*** Bundled in PHP and Python
+*** Available in C/\cpp, Java, \cs
+*** Native port in \cs
 
 == Wrapping Up ==
 
@@ -139,4 +221,5 @@ n = f(n)
 
 Special thanks to:
 
-* People on #0x10c-dev, #osu-lug, and #python on Freenode
+* People on @\#0x10c-dev@, @\#haskell@, @\#osu-lug@, and @\#python@ on Freenode
+* Ben Kero and Spencer Krum
