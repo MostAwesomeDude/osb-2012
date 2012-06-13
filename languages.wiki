@@ -196,6 +196,14 @@ _add_block(Block(50, "torch",
 * Ad-hoc queries
 * Potato programming
 
+==== Potato Programming ====
+
+* Coined by r0ml
+* Willful ignorance of libraries and a focus on DIY techniques
+* "Doing it the hard way"
+* "Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified bug-ridden slow implementation of half of Common Lisp."
+* s/Common Lisp/Prolog/g
+
 ==== Embedded DSLs ====
 
 * Prolog
