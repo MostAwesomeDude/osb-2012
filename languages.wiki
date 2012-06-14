@@ -242,6 +242,8 @@ _add_block(Block(50, "torch",
 * Coined by r0ml
 * Willful ignorance of libraries and a focus on DIY techniques
 * "Doing it the hard way"
+* Not necessarily slow, but definitely verbose
+** And thus, difficult and buggy!
 * "Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified bug-ridden slow implementation of half of Common Lisp."
 * s/Common Lisp/Prolog/g
 
