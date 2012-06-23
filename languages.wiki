@@ -65,6 +65,39 @@ title={Practial Lessons from Exotic Languages}
 2 sq sq .
 [code]>
 
+<[code][style=basic]
+: 1+ 1 + ;
+: 2* 2 * ;
+: 2/ 2 / ;
+[code]>
+
+==== More Concatenative Factoring ====
+
+<[code][style=basic]
+: decomp ( n -- )
+  2
+  begin  2dup dup * >=
+  while  2dup /mod swap
+    if   drop  1+ 1 or \ next odd number
+    else -rot nip  dup .
+    then
+  repeat
+  drop . ;
+[code]>
+
+<[code][style=basic]
+: next-odd 1+ 1 or ;
+: pin ( a b c -- c b ) -rot nip ;
+: drop. drop . ;
+: dup. dup . ;
+: sq dup * ;
+: decomp ( n -- )
+  2 begin 2dup sq >=
+  while 2dup /mod swap
+    if drop next-odd else pin dup. then
+  repeat drop. ;
+[code]>
+
 ==== Practical Factoring ====
 
 <[code][style=basic,language=Python]
