@@ -12,6 +12,7 @@ title={Practial Lessons from Exotic Languages}
 
 * Programmer
 * Dozens of languages
+*<2> Current working set: Python, C, Haskell, Forth, JS, \cpp, Java, AS3, Scheme, Puppet, Factor, Prolog
 
 ==== Your Languages ====
 
@@ -131,8 +132,6 @@ n = f(n)
 
 == Higher-level Operations ==
 
-=== Theory ===
-
 ==== Leveling Up ====
 
 * '''Higher-order function''': A function that takes other functions as parameters
@@ -141,6 +140,7 @@ n = f(n)
 
 * Higher-order functions (C, \cpp, \cs)
 * Sufficiently polymorphic types (Java, \cpp, \cs)
+* Effectively only \cpp and \cs can go home and use this today
 
 ==== Common Operations ====
 
@@ -154,8 +154,6 @@ n = f(n)
 ** @[a] -> [b] -> [(a, b)]@
 * Zip-with
 ** @(a -> b -> c) -> [a] -> [b] -> [c]@
-
-=== Practice ===
 
 ==== In Functional Languages ====
 
@@ -317,6 +315,15 @@ dim(X, 16).
 *** Bundled in PHP and Python
 *** Available in C/\cpp, Java, \cs
 *** Native port in \cs
+
+==== I Have the Power! ====
+
+* '''Declarative Programming''': Writing code by stating '''facts'''
+* Things get done by deducing things from facts
+* Examples
+** Rule-based workflow
+** Behavior-driven workflow
+** Data-driven design
 
 == Wrapping Up ==
 
