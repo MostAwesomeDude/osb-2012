@@ -30,6 +30,7 @@ title={Practial Lessons from Exotic Languages}
 
 * ECMAScripts (ActionScript, JavaScript)
 * Lisps (CL, Scheme)
+* MLs (SML, Ocaml)
 * PHP
 * Python
 
@@ -87,7 +88,7 @@ title={Practial Lessons from Exotic Languages}
 
 <[code][style=basic]
 : next-odd 1+ 1 or ;
-: pin ( a b c -- c b ) -rot nip ;
+: yank ( a b c -- c b ) -rot nip ;
 : drop. drop . ;
 : dup. dup . ;
 : sq dup * ;
@@ -124,7 +125,9 @@ n = f(n)
 ==== When to Factor? ====
 
 * Short answer: Always factor!
-* Profile before inlining
+* Longer answer: Function calls are not free, but usually cheap
+* "Premature optimization is the root of all evil"
+* Always profile before inlining
 
 == Higher-level Operations ==
 
@@ -142,10 +145,15 @@ n = f(n)
 ==== Common Operations ====
 
 * Fold (catamorphic operator)
+** @(a -> b -> a) -> [a] -> b@
 * Map
+** @(a -> b) -> [a] -> [b]@
 * Filter
+** @(a -> Bool) -> [a] -> [a]@
 * Zip (convolved map)
+** @[a] -> [b] -> [(a, b)]@
 * Zip-with
+** @(a -> b -> c) -> [a] -> [b] -> [c]@
 
 === Practice ===
 
