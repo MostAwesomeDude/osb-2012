@@ -253,6 +253,12 @@ class NoteTransformer(Visitor):
 * Tough expressions: Appogiaturi and acciaccaturi
 * Direct MIDI transcription
 
+==== Bonus: What I Learned Last Week! ====
+
+* My API is pretty bad
+* Haskell no longer considered harmful
+* Wub Machine is open-source
+
 ==== Questions? ====
 
 Special thanks to:
