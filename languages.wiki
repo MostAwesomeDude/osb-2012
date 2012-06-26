@@ -20,6 +20,7 @@ title={Practial Lessons from Exotic Languages}
 * C
 * \cpp
 * \cs
+* Go
 
 ==== My Languages ====
 
@@ -29,11 +30,11 @@ title={Practial Lessons from Exotic Languages}
 
 ==== Other Languages ====
 
-* ECMAScripts (ActionScript, JavaScript)
+* ECMAScript (ActionScript, JavaScript), Lua
 * Lisps (CL, Scheme)
 * MLs (SML, Ocaml)
 * PHP
-* Python
+* Python, Erlang
 
 ==== Concepts ====
 
@@ -138,9 +139,11 @@ n = f(n)
 
 ==== Linguistic Support ====
 
-* Higher-order functions (C, \cpp, \cs)
-* Sufficiently polymorphic types (Java, \cpp, \cs)
-* Effectively only \cpp and \cs can go home and use this today
+* First-class functions (C, \cpp, \cs, Go)
+* Sufficiently polymorphic types (Java, \cpp, \cs, Go)
+* Effectively \cpp and \cs can go home and use this today
+* Java can hack around this; Google for @ILambda@ and despair
+* Go has some of this in syntax, and some of this in interfaces
 
 ==== Common Operations ====
 
@@ -338,4 +341,6 @@ dim(X, 16).
 Special thanks to:
 
 * People on @\#0x10c-dev@, @\#haskell@, @\#osu-lug@, and @\#python@ on Freenode
-* Ben Kero and Spencer Krum
+* Cory Kolbeck
+* Ben Kero
+* Spencer Krum
