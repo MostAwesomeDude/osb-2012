@@ -278,6 +278,23 @@ _add_block(Block(50, "torch",
 * Ad-hoc queries
 * Potato programming
 
+==== Just For Comparison ====
+
+<[code][style=basic,language=Prolog,title=Blocks in Prolog]
+block(air, 0).
+block(stone, 1).
+block(grass, 2).
+block(dirt, 3).
+block(torch, 50).
+
+dim(torch, 0) :- !.
+dim(X, 16).
+[code]>
+
+* 379 LoC for 237 objects
+* A 52\% code savings!
+* Could be even more efficient with better clauses
+
 ==== Potato Programming ====
 
 * Coined by r0ml
