@@ -1,5 +1,5 @@
 <[autotemplate]
-title={Practial Lessons from Exotic Languages}
+title={Practical Lessons from Exotic Languages}
 [autotemplate]>
 
 \def\cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny \bf ++}}}
@@ -12,7 +12,7 @@ title={Practial Lessons from Exotic Languages}
 
 * Programmer
 * Dozens of languages
-*<2> Current working set: Python, C, Haskell, Forth, JS, \cpp, Java, AS3, Scheme, Puppet, Factor, Prolog
+*<2> Current working set: Python, C, Haskell, Forth, JS, \cpp, Java, AS3, Scheme, Factor, Prolog, Perl
 
 ==== Your Languages ====
 
@@ -135,13 +135,13 @@ n = f(n)
 
 ==== Leveling Up ====
 
+* '''First-class function''': A function that can be handled like any other value
 * '''Higher-order function''': A function that takes other functions as parameters
 
 ==== Linguistic Support ====
 
 * First-class functions (C, \cpp, \cs, Go)
 * Sufficiently polymorphic types (Java, \cpp, \cs, Go)
-* Effectively \cpp and \cs can go home and use this today
 * Java can hack around this; Google for @ILambda@ and despair
 * Go has some of this in syntax, and some of this in interfaces
 
@@ -324,8 +324,8 @@ dim(X, 16).
 * '''Declarative Programming''': Writing code by stating '''facts'''
 * Things get done by deducing things from facts
 * Examples
-** Rule-based workflow
-** Behavior-driven workflow
+** Rule-based work flow
+** Behavior-driven work flow
 ** Data-driven design
 
 == Wrapping Up ==
