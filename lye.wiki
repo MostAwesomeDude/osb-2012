@@ -11,17 +11,12 @@ title={Lye: How a Musician Built a Music Box}
 * Programmer
 *<2-> !'''Lazy'''!
 
-==== Audio ====
+==== Audio \& Music ====
 
-'''Audio''': Waveforms representing sound
-
-Audio is not important today.
-
-==== Music ====
-
-'''Music''': Universal language representing audio generation
-
-Lye generates large amounts of music from small amounts of music.
+* '''Audio''': Waveforms representing sound
+* '''Music''': Universal language representing audio generation
+* Audio is not important today
+* Lye generates large amounts of music from small amounts of music
 
 === Goals ===
 
@@ -251,6 +246,7 @@ class NoteTransformer(Visitor):
 ==== What's Next? ====
 
 * Tough expressions: Appogiaturi and acciaccaturi
+* Picking syntax for stuff not in Lilypond
 * Direct MIDI transcription
 
 ==== Bonus: What I Learned Last Week! ====
@@ -258,6 +254,7 @@ class NoteTransformer(Visitor):
 * My API is pretty bad
 * Haskell no longer considered harmful
 * Wub Machine is open-source
+* My lyne language isn't a very good language
 
 ==== Questions? ====
 
